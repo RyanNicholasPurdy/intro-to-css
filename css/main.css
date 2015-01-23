@@ -5,9 +5,12 @@ html {
   /* add semicolon to end of EVERY LINE OR CODE WILL NOT WORK in css specifically */
 }
 
-h1{
-  font-family: impact;
-  /* specifies the type of font you wish to use */
+h1, h2{
+/* specifies the element, by addign the comma ',h2' your'e adding h2 to the list
+of properties that will be changed with the code below */
+  font-family: impact, sans-serif;
+  /* specifies the type of font you wish to use. By adding a comma then
+  'sans-serif' specifies that if impact cannot be used it picks a default sans-serif */
   font-size: 10rem;
   /* sets the font size for the text */
   /* use rem NOT EVER PIXELS, rem is a resizable font unit, it will take the users specified
@@ -16,13 +19,52 @@ h1{
   /* specifies the font as normal */
   color:yellow;
   /* specifies font color */
+  text-align: center;
+  /* sets the text to be aligned to the center of the page, other alignments
+  include; center, left, right, justifiy */
+  text-decoration: underline;
+  /* adds a decoration to the text such as; underline, none, line-through */
+  line-height: 1.5;
+  /* line height is also known as 'leading', it multiplies the line height by the
+  specified font size */
+  text-shadow: 2px -5px 30px black;
+  /* first number specifies left-right alignment, second number specifies up-down,
+  the third number represents blur-radius (size), the fourth number represents colour */
+  transition:all 1s ease;
+  /* adds a transition, all specifies that when anything happens to the title it applies
+  the transition effects which in this case is 'hover' seen below. '1s' specifies the
+  duration of the transition. 'ease' will start slow then arc to end slow, 'linear'
+  will make the transition uniform */
+}
+
+h1:hover {
+/* gives h1 (header1) a hover state */
+  font-size: 12rem;
+  /* changes the h1 header to a larger size specified */
 }
 
 p{
-  font-family: helvetica;
-  /* specifies the type of font you wish to use */
-  font-weight: bold;
-  /* specifies the font style type ie-bold */
+  font-family: 'Montserrat', sans-serif;
+  /* typing the specific 'font name' in from the hmtl link will set the text
+  to the outside font linked to google fonts */
   color: #fff;
   /* specifies font color */
+  text-align: center;
+  /* sets the text to be aligned to the center of the page */
+}
+
+ol{
+  list-style-type: none;
+  /* specifies the bullets of the list to be lower-alpha(alphabet), lower-roman(roman numerals),
+   decimal(decimals), circle(circles), or none(no bullets)*/
+  padding:0;
+  /* padding aligns a list to the left and getd rid of indentation */
+  text-align: center;
+  /* aligns the list to the center of the page */
+}
+
+a:hover{
+/* sets a hover state to 'a' anchor link */
+  color: yellow;
+  /* sets the link to yellow when the mouse hovers over */
 }
