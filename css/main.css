@@ -1,0 +1,20 @@
+/* note are typed differently in css, you must use a star then slash as shown */
+html {
+  background-color:#f0663a;
+  /* changes background colour of the specified tag to a specified colour */
+  /* add semicolon to end of EVERY LINE OR CODE WILL NOT WORK in css specifically */
+}
+
+h1{
+  font-family: impact;
+  /* specifies the type of font you wish to use */
+}
+
+p{
+  font-family: helvetica;
+  /* specifies the type of font you wish to use */
+  font-weight: bold;
+  /* specifies the font style type ie-bold */
+  color: #fff;
+  /* specifies font color */
+}
