@@ -8,6 +8,14 @@ html {
 h1{
   font-family: impact;
   /* specifies the type of font you wish to use */
+  font-size: 10rem;
+  /* sets the font size for the text */
+  /* use rem NOT EVER PIXELS, rem is a resizable font unit, it will take the users specified
+  web font size & multiply it by what is set above. rem allows the user to have some control */
+  font-weight: normal;
+  /* specifies the font as normal */
+  color:yellow;
+  /* specifies font color */
 }
 
 p{
